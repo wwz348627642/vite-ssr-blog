@@ -1,0 +1,42 @@
+.articleItem {
+  border-bottom: 1px @border-color-base solid;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 30vh;
+  position: relative;
+}
+
+.linkText {
+  cursor: pointer;
+
+  &:hover {
+    color: lighten(#333, 30%);
+  }
+}
+
+.tagZone {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  line-height: 20px;
+}
+
+.tag {
+  display: inline-block;
+  position: relative;
+  padding: 0 12px;
+  min-height: 20px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+
+
+.tagName {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}

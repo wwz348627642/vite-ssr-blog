@@ -1,0 +1,21 @@
+.header {
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+  background-color: @layout-header-background !important;
+}
+
+
+.drawMenuBtn {
+  padding: 0 24px;
+  border-right: 1px @border-color-base solid;
+  cursor: pointer;
+
+  &:hover {
+    color: lighten(@heading-color, 20%);
+
+    :global(.ant-typography) {
+      color: inherit;
+    }
+  }
+}

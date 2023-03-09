@@ -1,0 +1,6 @@
+query querySetting {
+  querySetting {
+    openLive2d,
+    live2dName
+  }
+}

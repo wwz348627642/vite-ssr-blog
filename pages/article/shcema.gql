@@ -1,0 +1,32 @@
+query queryArticleItem($id: String!) {
+  queryArticleItem(id: $id) {
+    id
+    title
+    content
+  }
+}
+
+
+query commentList($articleId: String!) {
+  commentList(articleId: $articleId) {
+    id
+    pid
+    user {
+      id
+      nickName
+    }
+    content
+    createTime
+  }
+}
+
+mutation addComment($createCommentForm: CreateCommentForm!) {
+  addComment(createCommentForm: $createCommentForm) {
+    createTime
+    id,
+    user {
+      id
+      nickName
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.slide-leave {
+  animation-duration: .2s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  animation-play-state: paused;
+}
+
+.slide-leave.slide-leave-active {
+  animation-name: slideOutUp;
+  animation-play-state: running;
+}
+
+
+@keyframes slideOutUp {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0, -50%, 0);
+  }
+}

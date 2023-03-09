@@ -1,0 +1,25 @@
+query articleList ($listForm: ListForm!) {
+  articleList (listForm: $listForm) {
+    pageNo,
+    pageSize,
+    total,
+    content {
+      title,
+      description,
+      id,
+      createTime
+      tagList {
+        name,
+        color,
+        id,
+      }
+    }
+  }
+}
+
+query tagList {
+  tagList {
+    id,
+    name,
+  }
+}
